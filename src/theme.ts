@@ -4,14 +4,12 @@ import { createTheme } from '@mui/material/styles'
 // A custom theme for this app
 const theme = createTheme({
   palette: {
+    mode: 'light',
     primary: {
-      main: '#556cd6',
+      main: '#ffffff',
     },
     secondary: {
-      main: '#19857b',
-    },
-    error: {
-      main: red.A400,
+      main: '#039be5',
     },
   },
 })

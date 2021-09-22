@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
+        icon: 'src/images/logo.svg',
       },
     },
     'gatsby-plugin-sharp',
@@ -30,6 +30,14 @@ module.exports = {
       options: {
         isTSX: true,
         allExtensions: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /.svg$/,
+        },
       },
     },
   ],

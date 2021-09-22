@@ -4,14 +4,14 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 
 import React, { Fragment } from 'react'
-import { Helmet } from 'react-helmet'
 import { ThemeProvider } from '@mui/material/styles'
+import CssBaseline from '@mui/material/CssBaseline'
 import theme from './src/theme'
 
 function RootLayout({ children }) {
   return (
     <Fragment>
-      <Helmet></Helmet>
+      <CssBaseline />
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </Fragment>
   )
