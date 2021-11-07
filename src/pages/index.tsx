@@ -10,11 +10,6 @@ import ListItemAvatar from '@mui/material/ListItemAvatar'
 import Avatar from '@mui/material/Avatar'
 import PdfIcon from '@mui/icons-material/PictureAsPdf'
 import Paper from '@mui/material/Paper'
-import ImageList from '@mui/material/ImageList'
-import ImageListItem from '@mui/material/ImageListItem'
-import ImageOne from '../images/diapo-rivage.jpeg'
-import ImageDeux from '../images/diapo-mairie-haut.jpeg'
-import ImageTrois from '../images/diapo-ecole4.jpeg'
 
 // markup
 const IndexPage = () => {
@@ -26,27 +21,6 @@ const IndexPage = () => {
           flexDirection: 'column',
         }}
       >
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-          }}
-        >
-          <ImageList
-            sx={{ width: '100%', height: 370, display: 'flex' }}
-            cols={3}
-          >
-            <ImageListItem>
-              <img src={ImageOne} loading="lazy" />
-            </ImageListItem>
-            <ImageListItem>
-              <img src={ImageDeux} loading="lazy" />
-            </ImageListItem>
-            <ImageListItem>
-              <img src={ImageTrois} loading="lazy" />
-            </ImageListItem>
-          </ImageList>
-        </Box>
         <Box
           sx={{
             display: 'flex',
