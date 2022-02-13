@@ -21,9 +21,35 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/',
+        path: `${__dirname}/src/images/`,
       },
-      __key: 'images',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content`,
+        name: 'content',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `journauxCommunaux`,
+        path: `${__dirname}/static/files/journaux_communaux/`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-typescript`,
