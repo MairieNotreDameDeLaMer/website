@@ -1,9 +1,17 @@
 backend:
   name: git-gateway
   branch: main
+  commit_messages:
+    create: 'feat({{collection}}): create “{{slug}}”'
+    update: 'fix({{collection}}): update “{{slug}}”'
+    delete: 'fix({{collection}}): delete “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
 
-media_folder: static/img
-public_folder: /img
+local_backend: true
+
+media_folder: static/media
+public_folder: /media
 
 locale: 'fr'
 
@@ -11,8 +19,8 @@ collections:
   - name: 'journaux_communaux'
     label: 'Journaux Communaux'
     folder: 'src/content/journaux_communaux'
-    media_folder: static/files/journaux_communaux
-    public_folder: /files/journaux_communaux
+    media_folder: '/{{media_folder}}/files/journaux_communaux'
+    public_folder: '{{public_folder}}/files/journaux_communaux'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
@@ -22,13 +30,8 @@ collections:
           label: 'Template Key',
           name: 'templateKey',
           widget: 'hidden',
-          default: 'journaux-communaux',
+          default: 'journal-communaux',
         }
       - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
-      - {
-          label: 'Fichier PDF',
-          name: 'file',
-          widget: 'file',
-          media_library: { media_folder: '/static/files/journaux_communaux' },
-        }
+      - { label: 'Fichier PDF', name: 'file', widget: 'file' }

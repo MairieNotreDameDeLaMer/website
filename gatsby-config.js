@@ -35,7 +35,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `journauxCommunaux`,
-        path: `${__dirname}/static/files/journaux_communaux/`,
+        path: `${__dirname}/static/media/files/journaux_communaux/`,
       },
     },
     {
