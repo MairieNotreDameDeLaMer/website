@@ -1,16 +1,27 @@
 import Typography from '@mui/material/Typography'
-import { Layout, Section } from '../../components'
-import { socialRoutes } from '../../constants'
+import { useEffect } from 'react'
+import { Section } from '../../components'
+import { quotidienRoutes } from '../../constants'
+import { usePageTitle, useSubRoutes } from '../../contexts'
 
 const VillagePage = () => {
+  const { setPageTitle } = usePageTitle()
+  const { setSubRoutes } = useSubRoutes()
+
+  useEffect(() => {
+    setPageTitle('Votre Village')
+  }, [])
+
+  useEffect(() => {
+    setSubRoutes(quotidienRoutes)
+  }, [])
+
   return (
-    <Layout pageTitle={'Votre Village'} subRoutes={socialRoutes}>
-      <Section>
-        <Typography variant="h4" component="h2" sx={{ marginBottom: '20px' }}>
-          Notre-Dame-de-la-Mer
-        </Typography>
-      </Section>
-    </Layout>
+    <Section>
+      <Typography variant="h4" component="h2" sx={{ marginBottom: '20px' }}>
+        Notre-Dame-de-la-Mer
+      </Typography>
+    </Section>
   )
 }
 

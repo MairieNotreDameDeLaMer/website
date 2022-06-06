@@ -7,6 +7,7 @@ import React, { Fragment } from 'react'
 import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import theme from './src/theme'
+import Layout from './src/components/Layout'
 
 function RootLayout({ children }) {
   return (
@@ -19,4 +20,8 @@ function RootLayout({ children }) {
 
 export const wrapRootElement = ({ element }) => {
   return <RootLayout>{element}</RootLayout>
+}
+
+export const wrapPageElement = ({ element, props }) => {
+  return <Layout {...props}>{element}</Layout>
 }

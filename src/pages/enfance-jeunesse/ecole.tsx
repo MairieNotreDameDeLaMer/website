@@ -1,16 +1,27 @@
 import Typography from '@mui/material/Typography'
-import { Layout, Section } from '../../components'
+import { useEffect } from 'react'
+import { Section } from '../../components'
 import { jeunesseRoutes } from '../../constants'
+import { usePageTitle, useSubRoutes } from '../../contexts'
 
 const EcolePage = () => {
+  const { setPageTitle } = usePageTitle()
+  const { setSubRoutes } = useSubRoutes()
+
+  useEffect(() => {
+    setPageTitle("L'école")
+  }, [])
+
+  useEffect(() => {
+    setSubRoutes(jeunesseRoutes)
+  }, [])
+
   return (
-    <Layout pageTitle={"L'école"} subRoutes={jeunesseRoutes}>
-      <Section>
-        <Typography variant="h4" component="h2" sx={{ marginBottom: '20px' }}>
-          L’école de Notre-Dame-de-la-Mer
-        </Typography>
-      </Section>
-    </Layout>
+    <Section>
+      <Typography variant="h4" component="h2" sx={{ marginBottom: '20px' }}>
+        L’école de Notre-Dame-de-la-Mer
+      </Typography>
+    </Section>
   )
 }
 

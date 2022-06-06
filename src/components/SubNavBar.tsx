@@ -1,7 +1,7 @@
-import Routes, { RoutesProps } from './Routes'
+import { useSubRoutes } from '../contexts'
+import Routes from './Routes'
 
-export interface SubNavBarProps extends RoutesProps {}
-
-export default function SubNavBar({ routes }: SubNavBarProps) {
-  return <Routes routes={routes} />
+export default function SubNavBar() {
+  const { subRoutes } = useSubRoutes()
+  return <Routes routes={subRoutes} />
 }
