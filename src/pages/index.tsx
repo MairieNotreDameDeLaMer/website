@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider'
+import Typography from '@mui/material/Typography'
 import { Layout, Section } from '../components'
 import Paper from '@mui/material/Paper'
 
@@ -8,7 +9,7 @@ import { JournauxCommunaux } from '../templates'
 // markup
 const IndexPage = () => {
   return (
-    <Layout pageTitle={'Commune de Notre-Dame-de-la-Mer'}>
+    <Layout pageTitle={'Commune de Notre-Dame-de-la-Mer'} subRoutes={[]}>
       <Box
         sx={{
           display: 'flex',
@@ -22,7 +23,14 @@ const IndexPage = () => {
             justifyContent: 'space-evenly',
           }}
         >
-          <Section title="Les dernières infos">
+          <Section>
+            <Typography
+              variant="h4"
+              component="h2"
+              sx={{ marginBottom: '20px' }}
+            >
+              Les dernières infos
+            </Typography>
             <Paper elevation={3}>
               <JournauxCommunaux />
             </Paper>
@@ -35,7 +43,14 @@ const IndexPage = () => {
             flexItem
             sx={{ borderColor: 'secondary.dark' }}
           />
-          <Section title="Calendrier">
+          <Section>
+            <Typography
+              variant="h4"
+              component="h2"
+              sx={{ marginBottom: '20px' }}
+            >
+              Calendrier
+            </Typography>
             <div>Timeline</div>
           </Section>
         </Box>
