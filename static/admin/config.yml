@@ -35,6 +35,7 @@ collections:
       - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Fichier PDF', name: 'file', widget: 'file' }
+<<<<<<< HEAD
   - name: 'deliberations'
     label: 'Délibérations'
     folder: 'src/content/deliberations'
@@ -44,13 +45,44 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
+=======
+  - name: 'ecole'
+    label: 'Ecole'
+    folder: 'src/content/ecole'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+>>>>>>> b5dbd07 (add ecole)
     fields:
       - {
           label: 'Template Key',
           name: 'templateKey',
           widget: 'hidden',
+<<<<<<< HEAD
           default: 'deliberations',
         }
       - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Fichier PDF', name: 'file', widget: 'file' }
+=======
+          default: 'ecole',
+        }
+      - { label: 'Titre', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Equipe enseignante', name: 'equipe', widget: 'markdown' }
+      - { label: 'Effectifs', name: 'effectifs', widget: 'markdown' }
+      - { label: 'Services', name: 'services', widget: 'markdown' }
+      - {
+          label: 'Photos',
+          name: 'photos',
+          widget: 'list',
+          field:
+            {
+              label: 'photo',
+              name: 'photo',
+              widget: 'image',
+              default: 'photo',
+            },
+        }
+>>>>>>> b5dbd07 (add ecole)
