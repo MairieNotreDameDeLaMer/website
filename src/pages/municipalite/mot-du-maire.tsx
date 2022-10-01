@@ -39,6 +39,17 @@ const MotDuMairePage = () => {
       <Typography sx={{ marginBottom: '20px' }}>
         Bienvenue à vous toutes et tous, bonne visite.
       </Typography>
+      <Typography textAlign="right" sx={{ marginBottom: '10px' }}>
+        Votre maire
+      </Typography>
+      <Typography
+        textAlign="right"
+        variant="h6"
+        component="p"
+        sx={{ marginBottom: '20px' }}
+      >
+        Jean-Luc MAILLOC
+      </Typography>
     </Section>
   )
 }
