@@ -52,6 +52,31 @@ export const jeunesseRoutes: Route[] = [
     uri: '/enfance-jeunesse/ecole',
     label: "L'école",
   },
+  {
+    path: '/enfance-jeunesse/menus',
+    uri: '/enfance-jeunesse/menus-cantine',
+    label: 'Menus cantine',
+  },
+  {
+    path: '/enfance-jeunesse/petite-enfance',
+    uri: '/enfance-jeunesse/petite-enfance',
+    label: 'Petite enfance',
+  },
+  {
+    path: '/enfance-jeunesse/periscolaire',
+    uri: '/enfance-jeunesse/periscolaire',
+    label: 'Périscolaire',
+  },
+  {
+    path: '/enfance-jeunesse/college',
+    uri: '/enfance-jeunesse/college',
+    label: 'Collège Marcel Pagnol',
+  },
+  {
+    path: '/enfance-jeunesse/transport',
+    uri: '/enfance-jeunesse/transport-scolaire',
+    label: 'Transport Scolaire',
+  },
 ]
 
 export const socialRoutes: Route[] = [

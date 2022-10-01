@@ -47,6 +47,7 @@ export default function Header() {
         </Box>
         <Box>
           <h1>Mairie de Notre-Dame-de-la-Mer</h1>
+          <h2>Canton de Bonnière-sur-Seine</h2>
         </Box>
       </Box>
     </Box>

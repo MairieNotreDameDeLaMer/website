@@ -66,7 +66,7 @@ export default function Layout({ children }: LayoutProps) {
                       underline="hover"
                       to="/accessibility"
                     >
-                      Accésibilitié
+                      Accessibilité
                     </Link>
                   </ListItem>
                   <ListItem>

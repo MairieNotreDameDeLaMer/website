@@ -5,7 +5,7 @@ import { Section } from '../../components'
 import { jeunesseRoutes } from '../../constants'
 import { usePageTitle, useSubRoutes } from '../../contexts'
 
-const EcolePage = () => {
+const MenusPage = () => {
   const { setPageTitle } = usePageTitle()
   const { setSubRoutes } = useSubRoutes()
 
@@ -26,4 +26,4 @@ const EcolePage = () => {
   )
 }
 
-export default EcolePage
+export default MenusPage
