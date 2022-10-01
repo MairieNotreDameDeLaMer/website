@@ -1,5 +1,6 @@
 ---
 templateKey: ecole
+title: Version 1
 date: 2022-10-01T11:38:47.882Z
 equipe:
   - "Mme Le Poupon : Institutrice des maternelles"
