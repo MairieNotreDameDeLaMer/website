@@ -35,7 +35,6 @@ collections:
       - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Fichier PDF', name: 'file', widget: 'file' }
-<<<<<<< HEAD
   - name: 'deliberations'
     label: 'Délibérations'
     folder: 'src/content/deliberations'
@@ -45,7 +44,16 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
-=======
+    fields:
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'deliberations',
+        }
+      - { label: 'Titre', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Fichier PDF', name: 'file', widget: 'file' }
   - name: 'ecole'
     label: 'Ecole'
     folder: 'src/content/ecole'
@@ -53,19 +61,11 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
->>>>>>> b5dbd07 (add ecole)
     fields:
       - {
           label: 'Template Key',
           name: 'templateKey',
           widget: 'hidden',
-<<<<<<< HEAD
-          default: 'deliberations',
-        }
-      - { label: 'Titre', name: 'title', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
-      - { label: 'Fichier PDF', name: 'file', widget: 'file' }
-=======
           default: 'ecole',
         }
       - { label: 'Titre', name: 'title', widget: 'string' }
@@ -85,4 +85,3 @@ collections:
               default: 'photo',
             },
         }
->>>>>>> b5dbd07 (add ecole)
