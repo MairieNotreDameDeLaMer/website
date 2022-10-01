@@ -49,6 +49,11 @@ export const municipaliteRoutes: Route[] = [
     uri: '/municipalite/conseil-municipal',
     label: 'Conseil Municipal',
   },
+  {
+    path: '/municipalite/deliberations',
+    uri: '/municipalite/deliberations',
+    label: 'Délibérations',
+  },
 ]
 
 export const jeunesseRoutes: Route[] = [

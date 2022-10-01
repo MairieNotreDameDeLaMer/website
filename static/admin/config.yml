@@ -35,3 +35,22 @@ collections:
       - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Fichier PDF', name: 'file', widget: 'file' }
+  - name: 'deliberations'
+    label: 'Délibérations'
+    folder: 'src/content/deliberations'
+    media_folder: '/{{media_folder}}/files/deliberations'
+    public_folder: '{{public_folder}}/files/deliberations'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'deliberations',
+        }
+      - { label: 'Titre', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Fichier PDF', name: 'file', widget: 'file' }
