@@ -11,9 +11,7 @@ effectifs:
          2018/2019 : 56 enfants
   - |2
         2019/2020 : 64 enfants
-  - |-2
-        2020/2021 : 63 enfants
-    s
+  - "    2020/2021 : 63 enfants"
   - |2
         2021/2022 : 58 enfants
   - "    2022/2023 : 62 enfant"
