@@ -19,19 +19,19 @@ services: >-
   Nous vous rappelons qu’il existe au sein de l’école les services suivants :
 
 
-  - Garderie de 6h50 à 8h20 et de 16h30 à 18h45
+  * **Garderie** de 6h50 à 8h20 et de 16h30 à 18h45
 
 
   Numéro de téléphone pour joindre à la garderie, soit Mme PADE Sonia le matin, soit Mme LE BRIS Céline le soir : 01.30.42.02.43.
 
 
-  Tarifs de la garderie : 3,25 € pour le matin ou le soir 5,50 € pour le matin et le soir
+  * Tarifs de la garderie : 3,25 € pour le matin ou le soir 5,50 € pour le matin et le soir
 
 
   Pour les enfants restant après 18h45, heure de fermeture, le prix sera majorée de 3,20 € par tranche de 15 minutes et ne pouvant pas dépasser l’horaire de 19h.
 
 
-  Tarif de la cantine : 4,20 € le repas.
+  1. Tarif de la cantine : 4,20 € le repas.
 photos:
   - /media/maternelle-opt-250.jpg
   - /media/maternelle-250.jpg
