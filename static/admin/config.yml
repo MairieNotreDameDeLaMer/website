@@ -57,7 +57,8 @@ collections:
   - name: 'ecole'
     label: 'Ecole'
     folder: 'src/content/ecole'
-    create: true
+    create: false
+    delete: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
