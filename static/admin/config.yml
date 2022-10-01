@@ -54,6 +54,42 @@ collections:
       - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Fichier PDF', name: 'file', widget: 'file' }
+  - name: 'people'
+    label: 'Personnes'
+    folder: 'src/content/people'
+    media_folder: '/{{media_folder}}/files/people'
+    public_folder: '{{public_folder}}/files/people'
+    create: true
+    slug: '{{firstName}}-{{lastName}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'people',
+        }
+      - { label: 'Prénom', name: 'firstName', widget: 'string' }
+      - { label: 'Nom', name: 'lastName', widget: 'string' }
+      - {
+          label: 'Genre',
+          name: 'gender',
+          widget: 'select',
+          options: ['Homme', 'Femme', 'Non-Binaire'],
+        }
+      - {
+          label: 'Catégorie',
+          name: 'category',
+          widget: 'select',
+          options: ['Maire', 'Adjoint', 'Conseiller', 'Employé municipal'],
+        }
+      - {
+          label: 'Profession',
+          name: 'jobTitle',
+          widget: 'string',
+          required: false,
+        }
   - name: 'ecole'
     label: 'Ecole'
     folder: 'src/content/ecole'
